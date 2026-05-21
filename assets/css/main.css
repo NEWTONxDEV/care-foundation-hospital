@@ -367,6 +367,16 @@ h6 {
   overflow: hidden;
 }
 
+@media (max-width: 500px) {
+  .sitename {
+    font-size: 23px !important;
+  }
+
+  .welcome > h2 {
+    font-size: 30px !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -501,7 +511,13 @@ h6 {
     left: -100%;
     visibility: visible;
   }
+
+  
+  .navmenu .appointment {
+    display: none;
+  }
 }
+
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {
@@ -533,6 +549,7 @@ h6 {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    height: fit-content;
   }
 
   .navmenu a,
@@ -627,7 +644,34 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+
 }
+
+@media (min-width: 550px) {
+  .navmenu .appointment {
+    display: none;
+  }
+}
+
+/* @media (max-width: 549px) {
+    .navmenu .appointment {
+    background-color: green;
+    color: white !important;
+    border-radius: 1px solid green;
+    width: fit-content;
+    font-weight: 500;
+    position: relative;
+    left: 18px;
+    border-radius: 25px;
+  }
+
+  .navmenu .appointment:active {
+    background-color: white;
+  }
+
+} */
+
+
 
 /*--------------------------------------------------------------
 # Global Footer
